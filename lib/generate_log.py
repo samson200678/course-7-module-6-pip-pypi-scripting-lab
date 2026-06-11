@@ -1,15 +1,21 @@
 from datetime import datetime
+import os
 
-log_data = [
-    "User logged in",
-    "User updated profile",
-    "Report exported"
-]
 
-filename = f"log_{datetime.now().strftime('%Y%m%d')}.txt"
+def generate_log(log_data, directory="."):
+   
+    if not isinstance(log_data, list):
+        raise ValueError("log_data must be a list")
 
-with open(filename, "w") as file:
-    for entry in log_data:
-        file.write(entry + "\n")
 
-print(f"Log written to {filename}")
+    filename = f"log_{datetime.now().strftime('%Y%m%d')}.txt"
+    filepath = os.path.join(directory, filename)
+
+    
+    with open(filepath, "w") as file:
+        for entry in log_data:
+            file.write(f"{entry}\n")
+
+    print(f"Log written to {filename}")
+
+    return filepath
