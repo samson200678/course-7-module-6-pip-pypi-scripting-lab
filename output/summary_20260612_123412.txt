@@ -1,0 +1,18 @@
+============================================================
+       AUTOMATION TOOL — RUN SUMMARY REPORT
+============================================================
+  Run timestamp : 2026-06-12 12:34:12
+  Log file      : ./output/log_20260612_123411.txt
+  CSV output    : ./output/posts_20260612_123412.csv
+  Posts fetched : 5
+============================================================
+
+POST TITLES RETRIEVED
+----------------------------------------
+  [  1] sunt aut facere repellat provident occaecati excepturi optio reprehenderit
+  [  2] qui est esse
+  [  3] ea molestias quasi exercitationem repellat qui ipsa sit aut
+  [  4] eum et est occaecati
+  [  5] nesciunt quas odio
+
+Report generated successfully.
